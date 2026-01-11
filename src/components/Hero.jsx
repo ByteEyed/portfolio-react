@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section id="hero">
       <h2>Hello! I'm Sarthak Utekar.</h2>
-      <p>Enthusiast in training.</p>
+      <p>Frontend developer focused on React and modern JavaScript.</p>
     </section>
   );
 }

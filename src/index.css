@@ -1,4 +1,13 @@
 :root {
+  --bg: #1e1e1e;
+  --bg-card: #f8f9fb;
+  --text-main: #eaeaea;
+  --text-muted: #b5b5b5;
+  --accent: #0b5fff;
+  --max-width: 900px;
+}
+
+:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -24,11 +33,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -123,4 +133,102 @@ button {
   font-weight: 600;
   color: #0b5fff;
   margin-bottom: 0.5rem;
+}
+
+section {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 3.5rem 1.5rem;
+}
+
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-muted);
+  max-width: 650px;
+}
+
+header {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+nav a {
+  margin-left: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  color: #111;
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+
+.project-card p {
+  color: #444;
+}
+
+.project-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.featured {
+  border-left: 4px solid var(--accent);
+}
+.skills-list li {
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+header {
+  padding-bottom: 1.5rem;
 }

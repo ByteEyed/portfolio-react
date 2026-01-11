@@ -10,9 +10,12 @@ function About() {
           AI-integrated applications.
         </p>
   
-        <p>
-          I consider my work to be intermediate level and I am always looking for new challenges and opportunities to grow.
-        </p>
+       <p>
+       I enjoy breaking down problems, refactoring messy code, and improving structure
+  over time. I focus on building strong foundations before moving into more
+  complex full-stack and AI-driven systems.
+</p>
+
       </section>
     );
   }

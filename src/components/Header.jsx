@@ -1,14 +1,15 @@
 function Header() {
   return (
     <header>
-      <nav>
-        <h1>Sarthak Utekar</h1>
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <h1>Sarthak Utekar</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
   );
 }
 
