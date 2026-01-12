@@ -1,15 +1,17 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header>
-  <h1>Sarthak Utekar</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+      <h1>
+        <Link to="/">Sarthak Utekar</Link>
+      </h1>
 
+      <nav>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+    </header>
   );
 }
 
