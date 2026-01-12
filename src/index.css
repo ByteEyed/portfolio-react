@@ -250,3 +250,8 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
