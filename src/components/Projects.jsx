@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 const FEATURED_REPOS = [
-  "portfolio-v1",
+  "portfolio-react",
   "Spirits-Of-Bombay-main",
 ];
 
