@@ -27,6 +27,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -56,9 +57,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -69,19 +72,21 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .project-card {
@@ -122,6 +127,7 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .featured {
   border: 2px solid #0b5fff;
   background: #f0f5ff;
@@ -136,13 +142,15 @@ button {
 }
 
 section {
-  padding: 3.5rem 1.5rem;
+  text-align: center;
 }
 
 
 .skills-list {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .skills-list li {
@@ -163,14 +171,12 @@ h2 {
 p {
   color: var(--text-muted);
   max-width: 650px;
+  margin: 0 auto;
 }
 
 header {
-  padding: 2rem 1.5rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #2a2a2a;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 nav a {
@@ -182,12 +188,6 @@ nav a {
 
 nav a:hover {
   color: var(--accent);
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
 }
 
 .project-card {
@@ -214,17 +214,10 @@ nav a:hover {
 .featured {
   border-left: 4px solid var(--accent);
 }
+
 .skills-list li {
   color: var(--text-muted);
   margin-bottom: 0.4rem;
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 2rem;
-  row-gap: 0.6rem;
-  max-width: 700px;
 }
 
 
@@ -233,8 +226,9 @@ header {
 }
 
 .page {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
 .page {
